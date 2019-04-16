@@ -15,10 +15,12 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
         loancalculator.cpp \
-    test_loancalculator.cpp
+        excesspayment.cpp \
+        test_loancalculator.cpp
 
 HEADERS  += mainwindow.h \
         loancalculator.h \
-    test_loancalculator.h
+        excesspayment.h \
+        test_loancalculator.h
 
 FORMS    += mainwindow.ui

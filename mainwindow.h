@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "loancalculator.h"
+#include "excesspayment.h"
 
 namespace Ui {
 class MainWindow;
@@ -23,6 +24,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     LoanCalculator calc;
+    ExcessPayment excess_payment;
 };
 
 #endif // MAINWINDOW_H

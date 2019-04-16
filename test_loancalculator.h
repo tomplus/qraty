@@ -8,11 +8,12 @@ class TestLoanCalculator : public QObject
 {
     Q_OBJECT
 public:
-    explicit TestLoanCalculator(QObject *parent = 0) {};
+    explicit TestLoanCalculator(QObject *parent = 0) : QObject(parent) {};
 
 private slots:
     void should_return_zero_if_not_inited();
     void should_return_valid_payment();
+    void should_apply_simulation();
 
 };
 

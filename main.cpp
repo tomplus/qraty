@@ -13,6 +13,7 @@ int run_tests() {
 
 int main(int argc, char *argv[])
 {
+
     QApplication app(argc, argv);
 
     QCommandLineParser parser;
@@ -23,7 +24,6 @@ int main(int argc, char *argv[])
     if (parser.isSet(testOption)) {
         return run_tests();
     }
-
 
     MainWindow wnd;
     wnd.show();

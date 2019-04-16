@@ -201,7 +201,7 @@
              </widget>
             </item>
             <item row="6" column="1">
-             <widget class="QDoubleSpinBox" name="doubleSpinBoxOverpay">
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxPaymentSim">
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
               </property>
@@ -224,7 +224,7 @@
              </widget>
             </item>
             <item row="7" column="1">
-             <widget class="QSpinBox" name="spinBoxOverpayCount">
+             <widget class="QSpinBox" name="spinBoxSimCount">
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
               </property>
@@ -232,7 +232,7 @@
                <string> rat</string>
               </property>
               <property name="minimum">
-               <number>1</number>
+               <number>-1</number>
               </property>
               <property name="maximum">
                <number>999999</number>
@@ -299,6 +299,9 @@
               <property name="readOnly">
                <bool>true</bool>
               </property>
+              <property name="minimum">
+               <double>-9999999999999.000000000000000</double>
+              </property>
               <property name="maximum">
                <double>9999999999999.000000000000000</double>
               </property>
@@ -332,7 +335,7 @@
            </property>
            <column>
             <property name="text">
-             <string>Odestki</string>
+             <string>Odsetki</string>
             </property>
             <property name="textAlignment">
              <set>AlignCenter</set>
